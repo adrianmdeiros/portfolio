@@ -10,22 +10,21 @@
   <title>Adrian L. Medeiros - Portfólio</title>
 </head>
 
-<body class="h-screen w-full bg-neutral-900 font-mono text-neutral-100">
-  <header>
-    <ion-icon class="fixed right-4 top-4 rounded-full border-2 border-neutral-100/5 p-1 size-8 hover:bg-neutral-100/5 cursor-pointer z-10 text-yellow-400"
-      name="sunny-outline" ></ion-icon>
-  </header>
-  <main class="px-9 grid gap-28 justify-center pt-12 pb-12">
-    <div class="perfil grid gap-4 items-center justify-center">
-      <div class="grid gap-6">
-      <img class="max-h-48 rounded-full shadow-2xl shadow-neutral-600 mx-auto" src=""
-        alt="Foto do rosto de Adrian Lima Medeiros">
+<body class="h-screen w-full bg-neutral-100 dark:bg-neutral-900 font-mono text-neutral-900 dark:text-neutral-100">
+  <ion-icon
+  class="theme-switcher-btn fixed right-4 top-4 rounded-full border dark:border-neutral-100/5 p-1 size-7 hover:bg-neutral-100/5 cursor-pointer z-10 text-yellow-500 dark:text-neutral-500"
+  name="sunny-outline"></ion-icon>
+  <main class="px-9 grid gap-28 justify-center pt-12 pb-12 max-w-2xl mx-auto">
+    <div class="perfil grid gap-4">
+      <div class="grid gap-6 justify-center">
+        <img class="max-h-48 rounded-full shadow-2xl dark:shadow-emerald-600 mx-auto"
+          alt="Foto do rosto de Adrian Lima Medeiros">
         <div class="flex gap-2 items-center text-3xl text-emerald-400 font-bold">
           <span>></span>
-          <h1 class="text-neutral-100"></h1>
+          <h1 class="text-neutral-900 dark:text-neutral-100"></h1>
           <span>_</span>
         </div>
-        </div>
+      </div>
       <div class="contacts">
         <ul class="flex gap-6 items-center justify-center text-emerald-400">
           <li class="hover:text-emerald-600">
@@ -33,7 +32,7 @@
               <ion-icon name="logo-github" class="size-6"></ion-icon>
             </a>
           </li>
-          <li class="hover:text-emerald-600"> 
+          <li class="hover:text-emerald-600">
             <a href="https://instagram.com/adrianmdeiros">
               <ion-icon name="logo-instagram" class="size-6"></ion-icon>
             </a>
@@ -52,11 +51,16 @@
       </div>
     </div>
     <div class="sobre-mim flex items-center gap-14">
-      <div class="grid gap-2 max-w-xl">
-        <h2 class="text-3xl font-bold mb-4 text-emerald-400">> Sobre mim_</h2>
-        <h2 class="text-xl font-bold">E aí, beleza? 👋</h2>
-        <p class="text-justify leading-4 tracking-tighter text-base text-neutral-400">Meu nome é Adrian, tenho 23 anos e
-          estou cursando <b class="text-neutral-300">Sistemas
+      <div class="grid gap-2">
+        <h2 class="text-2xl font-bold mb-4">
+          <span class="text-emerald-400">></span>
+          Sobre mim
+          <span class="text-emerald-400">_</span>
+        </h2>
+        <h3 class="text-lg font-bold text-neutral-800 dark:text-neutral-300">E aí, beleza? 👋</h3>
+        <p class="text-justify leading-6 tracking-tight text-lg font-medium text-neutral-700 dark:text-neutral-400 break-keep">Meu nome é
+          Adrian, tenho 23 anos e
+          estou cursando <b class="text-neutral-700 dark:text-neutral-300">Sistemas
             de Informação</b> no Instituto Federal de Educação, Ciência e Tecnologia do Maranhão. Estou sempre em busca
           de
           novos conhecimentos e desafios na área da programação.
@@ -64,51 +68,61 @@
       </div>
     </div>
     <div id="hard-skills" class="hard-skills">
-      <h2 class="text-3xl font-bold mb-8  text-emerald-400">> Hard Skills_</h2>
+      <h2 class="text-2xl font-bold mb-8">
+        <span class="text-emerald-400">></span>
+        Hard Skills
+        <span class="text-emerald-400">_</span>
+      </h2>
       <div>
         <ul class="techs grid grid-cols-4 gap-8">
           <li title="HTML5">
-            <i class="devicon-html5-plain colored text-9xl"></i>
+            <i class="devicon-html5-plain colored text-8xl"></i>
           </li>
           <li title="CSS3">
-            <i class="devicon-css3-plain colored text-9xl"></i>
+            <i class="devicon-css3-plain colored text-8xl"></i>
           </li>
           <li title="JavaScript">
-            <i class="devicon-javascript-plain colored text-9xl"></i>
+            <i class="devicon-javascript-plain colored text-8xl"></i>
           </li>
           <li title="TypeScript">
-            <i class="devicon-typescript-plain colored text-9xl"></i>
+            <i class="devicon-typescript-plain colored text-8xl"></i>
           </li>
           <li title="React.js">
-            <i class="devicon-react-original colored text-9xl"></i>
+            <i class="devicon-react-original colored text-8xl"></i>
           </li>
           <li title="Tailwind">
-            <i class="devicon-tailwindcss-plain colored text-9xl"></i>
+            <i class="devicon-tailwindcss-plain colored text-8xl"></i>
           </li>
           <li title="Node.js">
-            <i class="devicon-nodejs-plain colored text-9xl"></i>
+            <i class="devicon-nodejs-plain colored text-8xl"></i>
           </li>
           <li title="Express.js">
-            <i class="devicon-express-original text-9xl"></i>
+            <i class="devicon-express-original text-8xl"></i>
           </li>
           <li title="Prisma ORM">
-            <img class="size-32"
+            <img class="size-28"
               src="https://creazilla-store.fra1.digitaloceanspaces.com/icons/3256965/file-type-prisma-icon-md.png" />
           </li>
-          <li title="Java">
+          <li>
+            <i class="devicon-docker-plain colored text-8xl"></i>
+          </li>
+          <!-- <li title="Java">
             <i class="devicon-java-plain colored text-9xl"></i>
           </li>
           <li title="Spring">
             <i class="devicon-spring-plain colored text-9xl"></i>
-          </li>
+          </li> -->
         </ul>
       </div>
     </div>
   </main>
   <footer class="h-24 grid place-content-center">
-    <p>> Made with ❤ by adrianmedeirosdev _</p>
+    <p>
+      <span class="text-emerald-400">></span>
+      Made with <span class="text-emerald-400">❤</span> by adrianmedeirosdev
+      <span class="text-emerald-400">_</span>
+    </p>
   </footer>
-
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   <script>
@@ -122,7 +136,12 @@
         profilePicture.src = data.avatar_url
       })
   </script>
-
+  <script>
+    tailwind.config = {
+      darkMode: 'class'
+    }
+  </script>
+  <script src="themeswitcher.js"></script>
 </body>
 
 </html>
