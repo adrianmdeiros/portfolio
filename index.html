@@ -12,10 +12,10 @@
 
 <body class="h-screen w-full bg-neutral-100 dark:bg-neutral-900 font-mono text-neutral-900 dark:text-neutral-100">
   <ion-icon
-  class="theme-switcher-btn fixed right-4 top-4 rounded-full border dark:border-neutral-100/5 p-1 size-7 hover:bg-neutral-100/5 cursor-pointer z-10 text-yellow-500 dark:text-neutral-500"
+  class="theme-switcher-btn fixed right-4 top-4 rounded-full border dark:border-neutral-100/10 p-2 size-7 hover:bg-neutral-100/5 cursor-pointer z-10 text-yellow-500 dark:text-neutral-500"
   name="sunny-outline"></ion-icon>
   <main class="px-9 grid gap-28 justify-center pt-12 pb-12 max-w-2xl mx-auto">
-    <div class="perfil grid gap-4">
+    <div class="perfil grid gap-4 ">
       <div class="grid gap-6 justify-center">
         <img class="max-h-48 rounded-full shadow-2xl dark:shadow-emerald-600 mx-auto"
           alt="Foto do rosto de Adrian Lima Medeiros">
@@ -50,7 +50,7 @@
         </ul>
       </div>
     </div>
-    <div class="sobre-mim flex items-center gap-14">
+    <div class="sobre-mim flex items-center gap-14 p-8 rounded-3xl border border-emerald-400">
       <div class="grid gap-2">
         <h2 class="text-2xl font-bold mb-4">
           <span class="text-emerald-400">></span>
@@ -67,16 +67,22 @@
         </p>
       </div>
     </div>
-    <div id="hard-skills" class="hard-skills">
-      <h2 class="text-2xl font-bold mb-8">
-        <span class="text-emerald-400">></span>
-        Hard Skills
-        <span class="text-emerald-400">_</span>
-      </h2>
-      <div>
-        <ul class="techs grid grid-cols-4 gap-8">
-          <li title="HTML5">
-            <i class="devicon-html5-plain colored text-8xl"></i>
+    <div class="hard-skills p-8 rounded-3xl border border-emerald-400 max-w-2xl">
+      <header class="flex justify-between">
+        <h2 class="text-2xl font-bold mb-8">
+          <span class="text-emerald-400">></span>
+          Hard Skills
+          <span class="text-emerald-400">_</span>
+        </h2>
+        <div class="flex gap-2">
+          <button class="flex items-center justify-center rounded-full border dark:border-neutral-100/10 p-1 size-9 hover:bg-neutral-100/5 cursor-pointer text-neutral-500 dark:text-neutral-100" >&lt;</button>
+          <button class="flex items-center justify-center rounded-full border dark:border-neutral-100/10 p-1 size-9 hover:bg-neutral-100/5 cursor-pointer text-neutral-500 dark:text-neutral-100">&gt;</button>
+        </div>
+      </header>
+      <div class="techs overflow-x-hidden">
+        <ul class="slider flex gap-8">
+          <li title="HTML5" >
+            <i class="devicon-html5-plain colored text-8xl "></i>
           </li>
           <li title="CSS3">
             <i class="devicon-css3-plain colored text-8xl"></i>
@@ -103,7 +109,7 @@
             <img class="size-28"
               src="https://creazilla-store.fra1.digitaloceanspaces.com/icons/3256965/file-type-prisma-icon-md.png" />
           </li>
-          <li>
+          <li title="Docker">
             <i class="devicon-docker-plain colored text-8xl"></i>
           </li>
           <!-- <li title="Java">
@@ -114,6 +120,21 @@
           </li> -->
         </ul>
       </div>
+    </div>
+    <div class="soft-skills p-8 rounded-3xl border border-emerald-400">
+      <h2 class="text-2xl font-bold mb-8">
+        <span class="text-emerald-400">></span>
+          Soft Skills
+        <span class="text-emerald-400">_</span>
+      </h2>
+      <ul class="flex flex-wrap gap-4 items-center text-neutral-300">
+        <li class="px-4 py-2 rounded-3xl border border-emerald-400 text-center whitespace-nowrap">Comunicação</li>
+        <li class="px-4 py-2 rounded-3xl border border-emerald-400 text-center whitespace-nowrap">Trabalho em Equipe</li>
+        <li class="px-4 py-2 rounded-3xl border border-emerald-400 text-center whitespace-nowrap">Resiliência</li>
+        <li class="px-4 py-2 rounded-3xl border border-emerald-400 text-center whitespace-nowrap">Flexibilidade</li>
+        <li class="px-4 py-2 rounded-3xl border border-emerald-400 text-center whitespace-nowrap">Agilidade</li>
+        <li class="px-4 py-2 rounded-3xl border border-emerald-400 text-center whitespace-nowrap">Resolução de Problemas</li>
+      </ul>
     </div>
   </main>
   <footer class="h-24 grid place-content-center">
