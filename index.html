@@ -14,7 +14,7 @@
   <ion-icon
     class="theme-switcher-btn fixed right-4 top-4 rounded-full border dark:border-neutral-100/10 p-2 size-7 hover:bg-neutral-100/5 cursor-pointer z-10 text-yellow-500 dark:text-neutral-500"
     name="sunny-outline" /></ion-icon>
-  <main class="px-9 grid gap-28 justify-center pt-12 pb-12 max-w-2xl mx-auto">
+  <main class="px-9 grid gap-28 pt-12 pb-12 mx-auto max-w-2xl mb-14">
     <div class="perfil grid gap-4 ">
       <div class="grid gap-6 justify-center">
         <img class="max-h-48 rounded-full shadow-2xl dark:shadow-emerald-600 mx-auto"
@@ -25,9 +25,8 @@
           <span>_</span>
         </div>
       </div>
-
     </div>
-    <div class="sobre-mim flex items-center gap-14 p-8 rounded-3xl border border-neutral-100  dark:border-emerald-400">
+    <div class="sobre-mim flex grow items-center gap-14 p-8">
       <div class="grid gap-2">
         <h2 class="text-2xl font-bold mb-4">
           <span class="text-emerald-400">></span>
@@ -46,18 +45,16 @@
         </p>
       </div>
     </div>
-    <div class="hard-skills p-8 rounded-3xl border border-neutral-100 dark:border-emerald-400 max-w-2xl">
-      <header class="flex justify-between">
-        <h2 class="text-2xl font-bold mb-8">
-          <span class="text-emerald-400">></span>
-          Hard Skills
-          <span class="text-emerald-400">_</span>
-        </h2>
-        <!-- <div class="flex gap-2">
+    <div class="hard-skills p-8">
+      <h2 class="text-2xl font-bold mb-8">
+        <span class="text-emerald-400">></span>
+        Hard Skills
+        <span class="text-emerald-400">_</span>
+      </h2>
+      <!-- <div class="flex gap-2">
           <button class="flex items-center justify-center rounded-full border dark:border-neutral-100/10 p-1 size-9 hover:bg-neutral-100/5 cursor-pointer text-neutral-500 dark:text-neutral-100" >&lt;</button>
           <button class="flex items-center justify-center rounded-full border dark:border-neutral-100/10 p-1 size-9 hover:bg-neutral-100/5 cursor-pointer text-neutral-500 dark:text-neutral-100">&gt;</button>
         </div> -->
-      </header>
       <div class="techs">
         <ul class="flex gap-8 flex-wrap">
           <li title="HTML5">
@@ -84,40 +81,43 @@
           <li title="Express.js">
             <i class="devicon-express-original text-8xl"></i>
           </li>
-          <!-- <li title="Prisma ORM">
-            <img class="size-28"
+          <li title="Prisma ORM">
+            <img class="size-24"
               src="https://creazilla-store.fra1.digitaloceanspaces.com/icons/3256965/file-type-prisma-icon-md.png" />
           </li>
-          <li title="Docker">
+          <li title="MySQL">
+            <i class="devicon-mysql-plain colored text-8xl"></i>
+          </li>
+          <!-- <li title="Docker">
             <i class="devicon-docker-plain colored text-8xl"></i>
           </li> -->
-          <!-- <li title="Java">
-            <i class="devicon-java-plain colored text-9xl"></i>
+          <li title="Java">
+            <i class="devicon-java-plain colored text-8xl"></i>
           </li>
           <li title="Spring">
-            <i class="devicon-spring-plain colored text-9xl"></i>
-          </li> -->
+            <i class="devicon-spring-plain colored text-8xl"></i>
+          </li>
         </ul>
       </div>
     </div>
-    <div class="soft-skills p-8 rounded-3xl border border-neutral-100 dark:border-emerald-400">
+    <div class="soft-skills p-8 ">
       <h2 class="text-2xl font-bold mb-8">
         <span class="text-emerald-400">></span>
         Soft Skills
         <span class="text-emerald-400">_</span>
       </h2>
       <ul class="flex flex-wrap gap-4 items-center dark:text-neutral-300">
-        <li class="px-4 py-2 rounded-3xl border border-emerald-400 text-center whitespace-nowrap">Comunicação</li>
-        <li class="px-4 py-2 rounded-3xl border border-emerald-400 text-center whitespace-nowrap">Trabalho em Equipe
+        <li class="px-4 py-2 rounded border border-emerald-400 text-center whitespace-nowrap">Comunicação</li>
+        <li class="px-4 py-2 rounded border border-emerald-400 text-center whitespace-nowrap">Trabalho em Equipe
         </li>
-        <li class="px-4 py-2 rounded-3xl border border-emerald-400 text-center whitespace-nowrap">Resiliência</li>
-        <li class="px-4 py-2 rounded-3xl border border-emerald-400 text-center whitespace-nowrap">Flexibilidade</li>
-        <li class="px-4 py-2 rounded-3xl border border-emerald-400 text-center whitespace-nowrap">Agilidade</li>
-        <li class="px-4 py-2 rounded-3xl border border-emerald-400 text-center whitespace-nowrap">Resolução de Problemas
+        <li class="px-4 py-2 rounded border border-emerald-400 text-center whitespace-nowrap">Resiliência</li>
+        <li class="px-4 py-2 rounded border border-emerald-400 text-center whitespace-nowrap">Flexibilidade</li>
+        <li class="px-4 py-2 rounded border border-emerald-400 text-center whitespace-nowrap">Agilidade</li>
+        <li class="px-4 py-2 rounded border border-emerald-400 text-center whitespace-nowrap">Resolução de Problemas
         </li>
       </ul>
     </div>
-    <div class="projects p-8 rounded-3xl border border-neutral-100 dark:border-emerald-400">
+    <div class="projects p-8">
       <h2 class="text-2xl font-bold mb-8">
         <span class="text-emerald-400">></span>
         Projetos
@@ -127,48 +127,40 @@
         <!-- repos -->
       </ul>
     </div>
-    <div class="contacts p-8 rounded-3xl border border-neutral-100 dark:border-emerald-400">
-      <h2 class="text-2xl font-bold mb-8">
-        <span class="text-emerald-400">></span>
-        Contatos
-        <span class="text-emerald-400">_</span>
-      </h2>
-      <ul class="flex gap-6 items-center text-emerald-400">
-        <li class="hover:text-emerald-600">
-          <a target="_blank" href="https://github.com/adrianmedeirosdev">
-            <ion-icon name="logo-github" class="size-6"></ion-icon>
-          </a>
-        </li>
-        <li class="hover:text-emerald-600">
-          <a target="_blank" href="https://instagram.com/adrianmdeiros">
-            <ion-icon name="logo-instagram" class="size-6"></ion-icon>
-          </a>
-        </li>
-        <li class="hover:text-emerald-600">
-          <a target="_blank" href="https://twitter.com/adrianmdeiros">
-            <ion-icon name="logo-twitter" class="size-6"></ion-icon>
-          </a>
-        </li>
-        <li class="hover:text-emerald-600">
-          <a target="_blank" href="https://api.whatsapp.com/send?phone=5598991650677">
-            <ion-icon name="logo-whatsapp" class="size-6"></ion-icon>
-          </a>
-        </li>
-        <li class="hover:text-emerald-600">
-          <a target="_blank" href="">
-            <ion-icon name="gmail" class="size-6"></ion-icon>
-          </a>
-        </li>
-      </ul>
-    </div>
   </main>
-  <footer class="h-24 grid place-content-center">
-    <p>
+  <footer class="h-44 grid gap-6 place-content-center bg-neutral-200 dark:bg-neutral-800">
+    <ul class="flex gap-6 text-emerald-400 justify-center">
+      <li class="hover:text-emerald-600">
+        <a target="_blank" href="https://github.com/adrianmedeirosdev">
+          <ion-icon name="logo-github" class="size-6"></ion-icon>
+        </a>
+      </li>
+      <li class="hover:text-emerald-600">
+        <a target="_blank" href="https://instagram.com/adrianmdeiros">
+          <ion-icon name="logo-instagram" class="size-6"></ion-icon>
+        </a>
+      </li>
+      <li class="hover:text-emerald-600">
+        <a target="_blank" href="https://twitter.com/adrianmdeiros">
+          <ion-icon name="logo-twitter" class="size-6"></ion-icon>
+        </a>
+      </li>
+      <li class="hover:text-emerald-600">
+        <a target="_blank" href="https://api.whatsapp.com/send?phone=5598991650677">
+          <ion-icon name="logo-whatsapp" class="size-6"></ion-icon>
+        </a>
+      </li>
+      <li class="hover:text-emerald-600">
+        <a target="_blank" href="mailto:lima.adrian13@gmail.com">
+          <ion-icon name="mail-outline" class="size-6"></ion-icon>
+        </a>
+      </li>
+    </ul>
+    <p class=" text-neutral-900 dark:text-neutral-100">
       <span class="text-emerald-400">></span>
       Made with <span class="text-emerald-400">❤</span> by adrianmedeirosdev
       <span class="text-emerald-400">_</span>
     </p>
-    </div>
   </footer>
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -195,8 +187,8 @@
           const link = document.createElement('a')
           link.href = data.html_url
           link.target = '_blank'
-          item.innerHTML = `<ion-icon name="folder"></ion-icon>  ${data.name}`
-          item.className = 'flex gap-2 items-center px-4 py-2 h-16 rounded border border-emerald-400 text-center whitespace-nowrap hover:'
+          item.innerHTML = `<ion-icon name="folder-open-outline"></ion-icon>  ${data.name}`
+          item.className = 'flex gap-2 items-center px-4 py-2 h-16 rounded border border-emerald-400 text-center whitespace-nowrap hover:bg-emerald-400 hover:text-black'
           link.appendChild(item)
           projects.appendChild(link)
         })
