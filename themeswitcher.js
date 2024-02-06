@@ -13,12 +13,12 @@ window.onload = () => {
 
 themeSwitcherBtn.onclick = () => {
     if(htmlElement.classList.contains('dark')){
-        themeSwitcherBtn.name = 'sunny-outline'
         htmlElement.classList.remove('dark')
+        themeSwitcherBtn.name = 'sunny-outline'
         localStorage.setItem('theme', 'light')
     }else{
-        themeSwitcherBtn.name = 'moon-outline'
         htmlElement.classList.add('dark')
+        themeSwitcherBtn.name = 'moon-outline'
         localStorage.setItem('theme', 'dark')
     }
 }
