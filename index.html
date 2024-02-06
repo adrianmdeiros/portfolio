@@ -1,44 +1,57 @@
 <!DOCTYPE html>
-<html lang="pt-br" class="dark scroll-smooth">
+<html lang="pt-br" class="scroll-smooth">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <link rel="stylesheet" href="css/style.css">
   <script src="https://cdn.tailwindcss.com"></script>
-  <title>Adrian L. Medeiros - Portfólio</title>
-  <style>
-    .link-active{
-      background-color: #34d399;
-      color: #f5f5f5;
-    }
-  </style>
+  <title>Portfólio - Adrian L. Medeiros</title>
 </head>
+
 <body class="h-screen w-full bg-neutral-100 dark:bg-neutral-900 font-sans text-neutral-900 dark:text-neutral-100 ">
-  <header class="header flex items-center justify-center px-9 h-20 bg-neutral-100 dark:bg-neutral-900 fixed w-full top-0 z-10 shadow">
+  <header
+    class="header flex items-center justify-center px-9 h-20 bg-neutral-100 dark:bg-neutral-900 sticky w-full top-0 z-10 shadow-sm ease-in ease-out">
     <nav>
       <ul class="nav-links flex gap-4 items-center">
-        <li><a class="link-active px-4 py-2 rounded-lg hover:bg-emerald-400 hover:text-neutral-100 active:bg-emerald-400 font-semibold" href="#bio" >Sobre</a></li>
-        <li><a class="px-4 py-2 rounded-lg hover:bg-emerald-400 hover:text-neutral-100 active:bg-emerald-400 font-semibold  " href="#projects">Projetos</a></li>
-        <li><a class="px-4 py-2 rounded-lg hover:bg-emerald-400 hover:text-neutral-100 active:bg-emerald-400 font-semibold  " href="#contacts">Contatos</a></li>
+        <li><a
+            class="link-active px-4 py-2 rounded-lg hover:bg-emerald-400 hover:text-neutral-100 active:bg-emerald-400 font-semibold"
+            href="#bio">Sobre</a></li>
+        <li><a
+            class="px-4 py-2 rounded-lg hover:bg-emerald-400 hover:text-neutral-100 active:bg-emerald-400 font-semibold  "
+            href="#projects">Projetos</a></li>
+        <li><a
+            class="px-4 py-2 rounded-lg hover:bg-emerald-400 hover:text-neutral-100 active:bg-emerald-400 font-semibold  "
+            href="#contacts">Contatos</a></li>
+        <li><a
+            class="flex items-center gap-2 px-4 py-2 rounded-lg hover:bg-emerald-400 hover:text-neutral-100 active:bg-emerald-400 font-semibold"
+            href="">CV</a></li>
       </ul>
     </nav>
-    <ion-icon
-    class="fixed top-4 right-4 theme-switcher-btn rounded-full border border-neutral-900/20 dark:border-neutral-100/20 p-2 size-5 hover:bg-neutral-100/5 cursor-pointer z-10 text-yellow-500 dark:text-neutral-100"
-    name="sunny-outline" /></ion-icon>
+    <div class="absolute right-4 flex gap-2">
+      <ion-icon
+        class="theme-switcher-btn rounded-full border border-neutral-900/20 dark:border-neutral-100/20 p-2 size-5 hover:bg-neutral-100/5 cursor-pointer z-10 text-yellow-500 dark:text-neutral-100"
+        name="sunny-outline" /></ion-icon>
+      <ion-icon
+        class="theme-switcher-btn rounded-full border border-neutral-900/20 dark:border-neutral-100/20 p-2 size-5 hover:bg-neutral-100/5 cursor-pointer z-10 text-yellow-500 dark:text-neutral-100"
+        name="language-outline" /></ion-icon>
+    </div>
   </header>
   <main class="px-16 grid place-content-center gap-24 pb-12 mb-14">
     <section id="bio" class="bio pt-36 flex flex-wrap gap-24 mx-auto">
       <div class="perfil flex gap-12">
         <div class="grid place-content-center">
-          <h1 class="text-3xl font-bold">Adrian Lima Medeiros</h1>
-          <h2 class="text-2xl dark:text-neutral-400 text-center">Analista de Sistemas & <br> Desenvolvedor Full Stack</h2>
+          <h1 class="text-3xl font-bold text-end">Adrian Lima Medeiros</h1>
+          <h2 class="text-2xl dark:text-neutral-400 text-end">Analista de Sistemas & <br> Desenvolvedor Full Stack
+          </h2>
         </div>
-        <img class="mx-auto perfil-img max-h-48 ring ring-emerald-400 rounded-full shadow-2xl dark:shadow-emerald-600"
-        alt="Foto do rosto de Adrian Lima Medeiros">
+        <img
+          class=" mx-auto perfil-img min-h-48 max-h-52 ring ring-emerald-400 rounded-full shadow-2xl dark:shadow-emerald-600"
+          alt="Foto do rosto de Adrian Lima Medeiros">
       </div>
-      <div  class="about flex items-center gap-14 max-w-lg">
+      <div class="about flex items-center gap-14 max-w-lg">
         <div class="grid gap-2">
           <h2
             class="text-2xl font-bold mb-4 before:content-[''] before:inline-block before:mr-1 before:bg-emerald-400 before:h-5 before:w-1 before:text-emerald-400">
@@ -57,163 +70,174 @@
           </p>
         </div>
       </div>
-      
     </section>
-    <div id="projects" class="projects pt-24">
-      <h2 class="text-2xl font-bold mb-8 before:content-[''] before:inline-block before:mr-1 before:bg-emerald-400 before:h-5 before:w-1 before:text-emerald-400">
+    <div id="projects" class="grid place-content-center pt-24 mx-auto">
+      <h2
+        class="text-2xl font-bold mb-8 before:content-[''] before:inline-block before:mr-1 before:bg-emerald-400 before:h-5 before:w-1 before:text-emerald-400">
         Projetos
       </h2>
-      <ul class="projects-list flex flex-wrap gap-4 items-center dark:text-neutral-300">
-        <!-- repos -->
+      <ul
+        class="projects-list grid xl:grid-cols-2 grid-cols-1 gap-10 items-center dark:text-neutral-300 *:items-center *:gap-6 *:border *:border-neutral-900/10 dark:*:border-neutral-100/10 dark:*:bg-neutral-800 *:p-4 *:rounded-xl hover:*:shadow-xl *:max-w-xl *:transition-shadow *:min-h-48 sm:*:flex *:grid">
+        <li class="w-full">
+          <img class="sm:max-w-56 min-h-32 rounded-lg" src="assets/preview.gif"
+            alt="gif com um usuário digitando tarefas em uma to-do list">
+          <div>
+            <h3 class="text-xl font-bold">To-do</h3>
+            <p class="mb-4">Um to-do feito em HTML5, CSS3 e JavaScript.</p>
+            <div class="flex gap-2 *:font-semibold">
+              <a target="_blank" href="https://adrianmedeirosdev.github.io/to-do/"
+                class="px-4 py-1 bg-emerald-500 text-neutral-100 rounded-xl hover:bg-emerald-600">Visualizar</a>
+              <a target="_blank" href="https://github.com/adrianmedeirosdev/to-do"
+                class="px-4 py-1  rounded-xl flex items-center gap-1 hover:text-neutral-100 hover:bg-neutral-900 border-neutral-900/10">
+                <ion-icon class="size-5" name="logo-github"></ion-icon> GitHub</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <img class="sm:max-w-56 min-h-32 rounded-lg" src="assets/site-advocacia.png"
+            alt="gif com um usuário digitando tarefas em uma to-do list">
+          <div>
+            <h3 class="text-xl font-bold">Exemplo de Site de Advocacia</h3>
+            <p class="mb-4">Exemplo de site para uma advocacia feito com HTML5, CSS3, e JavaScript.</p>
+            <div class="flex gap-2 *:font-semibold">
+              <a target="_blank" href="https://adrianmedeirosdev.github.io/site-advocacia/"
+                class="px-4 py-1 bg-emerald-500 text-neutral-100 rounded-xl hover:bg-emerald-600">Visualizar</a>
+              <a target="_blank" href="https://github.com/adrianmedeirosdev/to-do"
+                class="px-4 py-1  rounded-xl flex items-center gap-1 hover:text-neutral-100 hover:bg-neutral-900 b">
+                <ion-icon class="size-5" name="logo-github"></ion-icon> GitHub</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <img class="sm:max-w-56 min-h-32 rounded-lg" src="assets/react-calculator.png"
+            alt="gif com um usuário digitando tarefas em uma to-do list">
+          <div>
+            <h3 class="text-xl font-bold">Calculadora</h3>
+            <p class="mb-4">Calculadora simples feita com TypeScript, React e Styled Components.</p>
+            <div class="flex gap-2 *:font-semibold">
+              <a target="_blank" href="https://adrianmedeirosdev-calculator-react.vercel.app"
+                class="px-4 py-1 bg-emerald-500 text-neutral-100 rounded-xl hover:bg-emerald-600">Visualizar</a>
+              <a target="_blank" href="https://github.com/adrianmedeirosdev/to-do"
+                class="px-4 py-1  rounded-xl flex items-center gap-1 hover:text-neutral-100 hover:bg-neutral-900">
+                <ion-icon class="size-5" name="logo-github"></ion-icon>GitHub</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <img class="sm:max-w-56 min-h-32 rounded-lg"
+            src="https://dkrn4sk0rn31v.cloudfront.net/uploads/2019/07/05112250/SPRING-BOOT.png"
+            alt="gif com um usuário digitando tarefas em uma to-do list">
+          <div>
+            <h3 class="text-xl font-bold">Api Spring de Gerenciamento de Partidas de Futebol</h3>
+            <p class="mb-4">Uma api simples feita com Java e Spring para gerenciar partidas de futebol.</p>
+            <div class="flex gap-2 *:font-semibold">
+              <a target="_blank" href="https://github.com/adrianmedeirosdev/championship-manager-spring-api"
+                class="px-4 py-1  rounded-xl flex items-center gap-1 hover:text-neutral-100 hover:bg-neutral-900 border-neutral-900/10">
+                <ion-icon class="size-5" name="logo-github"></ion-icon>GitHub</a>
+            </div>
+          </div>
+        </li>
       </ul>
     </div>
-    <section class="skills grid grid-cols-2 gap-24 pt-24 mx-auto">
-      <div class="hard-skills max-w-xl overflow-x-hidden">
-        <h2 class="text-2xl font-bold mb-8 before:content-[''] before:inline-block before:mr-1 before:bg-emerald-400 before:h-5 before:w-1 before:text-emerald-400">
+    <section class="flex flex-wrap gap-24 pt-24">
+      <div class="hard-skills max-w-xl">
+        <h2
+          class="text-2xl font-bold mb-8 before:content-[''] before:inline-block before:mr-1 before:bg-emerald-400 before:h-5 before:w-1 before:text-emerald-400">
           Hard Skills
         </h2>
-        <!-- <div class="flex gap-2">
-          <button class="flex items-center justify-center rounded-full border dark:border-neutral-100/10 p-1 size-9 hover:bg-neutral-100/5 cursor-pointer text-neutral-500 dark:text-neutral-100" >&lt;</button>
-          <button class="flex items-center justify-center rounded-full border dark:border-neutral-100/10 p-1 size-9 hover:bg-neutral-100/5 cursor-pointer text-neutral-500 dark:text-neutral-100">&gt;</button>
-        </div> -->
         <div class="techs">
-          <ul class="flex flex-wrap gap-6">
+          <ul class="gap-6 *:text-6xl flex flex-wrap">
             <li title="HTML5">
-              <i class="devicon-html5-plain colored text-7xl"></i>
+              <i class="devicon-html5-plain colored"></i>
             </li>
             <li title="CSS3">
-              <i class="devicon-css3-plain colored text-7xl"></i>
+              <i class="devicon-css3-plain colored"></i>
             </li>
             <li title="JavaScript">
-              <i class="devicon-javascript-plain colored text-7xl"></i>
+              <i class="devicon-javascript-plain colored"></i>
             </li>
             <li title="TypeScript">
-              <i class="devicon-typescript-plain colored text-7xl"></i>
+              <i class="devicon-typescript-plain colored"></i>
             </li>
             <li title="React.js">
-              <i class="devicon-react-original colored text-7xl"></i>
+              <i class="devicon-react-original colored"></i>
             </li>
             <li title="Tailwind">
-              <i class="devicon-tailwindcss-plain colored text-7xl"></i>
+              <i class="devicon-tailwindcss-plain colored"></i>
             </li>
             <li title="Node.js">
-              <i class="devicon-nodejs-plain colored text-7xl"></i>
+              <i class="devicon-nodejs-plain colored"></i>
             </li>
             <li title="Express.js">
-              <i class="devicon-express-original text-7xl"></i>
+              <i class="devicon-express-original"></i>
             </li>
             <li title="Prisma ORM">
-              <img class="size-20"
+              <img class="size-16"
                 src="https://creazilla-store.fra1.digitaloceanspaces.com/icons/3256965/file-type-prisma-icon-md.png" />
             </li>
             <li title="MySQL">
-              <i class="devicon-mysql-plain colored text-7xl"></i>
+              <i class="devicon-mysql-plain colored"></i>
             </li>
             <!-- <li title="Docker">
-            <i class="devicon-docker-plain colored text-7xl"></i>
+            <i class="devicon-docker-plain colored"></i>
           </li> -->
             <li title="Java">
-              <i class="devicon-java-plain colored text-7xl"></i>
+              <i class="devicon-java-plain colored"></i>
             </li>
             <li title="Spring">
-              <i class="devicon-spring-plain colored text-7xl"></i>
+              <i class="devicon-spring-plain colored"></i>
             </li>
           </ul>
         </div>
       </div>
-      <div class="soft-skills">
-        <h2 class="text-2xl font-bold mb-8 before:content-[''] before:inline-block before:mr-1 before:bg-emerald-400 before:h-5 before:w-1 before:text-emerald-400">
-          Soft Skills
+      <div id="contacts">
+        <h2
+          class="text-2xl font-bold mb-8 before:content-[''] before:inline-block before:mr-1 before:bg-emerald-400 before:h-5 before:w-1 before:text-emerald-400">
+          Contato
         </h2>
-        <ul class="flex flex-wrap gap-4 items-center dark:text-neutral-300 max-w-xl">
-          <li class="px-4 py-2 rounded-lg border border-emerald-400 text-center whitespace-nowrap">Resolução de Problemas
-            <li class="px-4 py-2 rounded-lg border border-emerald-400 text-center whitespace-nowrap">Resiliência</li>
-            <li class="px-4 py-2 rounded-lg border border-emerald-400 text-center whitespace-nowrap">Agilidade</li>
-            <li class="px-4 py-2 rounded-lg border border-emerald-400 text-center whitespace-nowrap">Flexibilidade</li>
+        <ul class="flex gap-6 text-emerald-400">
+          <li class="hover:text-emerald-600">
+            <a target="_blank" href="https://github.com/adrianmedeirosdev">
+              <ion-icon name="logo-github" class="size-6"></ion-icon>
+            </a>
+          </li>
+          <li class="hover:text-emerald-600">
+            <a target="_blank" href="https://instagram.com/adrianmdeiros">
+              <ion-icon name="logo-instagram" class="size-6"></ion-icon>
+            </a>
+          </li>
+          <li class="hover:text-emerald-600">
+            <a target="_blank" href="https://twitter.com/adrianmdeiros">
+              <ion-icon name="logo-twitter" class="size-6"></ion-icon>
+            </a>
+          </li>
+          <li class="hover:text-emerald-600">
+            <a target="_blank" href="https://api.whatsapp.com/send?phone=5598991650677">
+              <ion-icon name="logo-whatsapp" class="size-6"></ion-icon>
+            </a>
+          </li>
+          <li class="hover:text-emerald-600">
+            <a target="_blank" href="mailto:lima.adrian13@gmail.com">
+              <ion-icon name="mail-outline" class="size-6"></ion-icon>
+            </a>
           </li>
         </ul>
       </div>
     </section>
   </main>
   <footer class=" w-full h-44 grid gap-6 place-content-center ">
-    <ul class="flex gap-6 text-emerald-400 justify-center">
-      <li class="hover:text-emerald-600">
-        <a target="_blank" href="https://github.com/adrianmedeirosdev">
-          <ion-icon name="logo-github" class="size-6"></ion-icon>
-        </a>
-      </li>
-      <li class="hover:text-emerald-600">
-        <a target="_blank" href="https://instagram.com/adrianmdeiros">
-          <ion-icon name="logo-instagram" class="size-6"></ion-icon>
-        </a>
-      </li>
-      <li class="hover:text-emerald-600">
-        <a target="_blank" href="https://twitter.com/adrianmdeiros">
-          <ion-icon name="logo-twitter" class="size-6"></ion-icon>
-        </a>
-      </li>
-      <li class="hover:text-emerald-600">
-        <a target="_blank" href="https://api.whatsapp.com/send?phone=5598991650677">
-          <ion-icon name="logo-whatsapp" class="size-6"></ion-icon>
-        </a>
-      </li>
-      <li class="hover:text-emerald-600">
-        <a target="_blank" href="mailto:lima.adrian13@gmail.com">
-          <ion-icon name="mail-outline" class="size-6"></ion-icon>
-        </a>
-      </li>
-    </ul>
+
     <p class=" text-neutral-900 dark:text-neutral-100">
       Made with <span class="text-emerald-400">❤</span> by adrianmedeirosdev
     </p>
   </footer>
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-  <script>
-    const myName = document.querySelector("h1")
-    const profilePicture = document.querySelector(".perfil-img")
-
-    fetch('https://api.github.com/users/adrianmedeirosdev')
-      .then(response => response.json())
-      .then(data => {
-        profilePicture.src = data.avatar_url
-      })
-  </script>
-  <script>
-    const projects = document.querySelector('.projects-list')
-
-    fetch('https://api.github.com/users/adrianmedeirosdev/repos')
-      .then(response => response.json())
-      .then(data => {
-        const reposWithoutFirst = data.slice(1)
-        reposWithoutFirst.forEach(data => {
-          const item = document.createElement('li')
-          const link = document.createElement('a')
-          link.href = data.html_url
-          link.target = '_blank'
-          item.innerHTML = `<ion-icon name="folder-open"></ion-icon>  ${data.name}`
-          item.className = 'flex gap-2 items-center px-4 py-2 rounded-lg border border-emerald-400 text-center  hover:bg-emerald-400 hover:text-black'
-          link.appendChild(item)
-          projects.appendChild(link)
-        })
-      })
-
-  </script>
-  <script>
-    const navLinks = document.querySelectorAll('.nav-links li a');
-    navLinks.forEach(link => {
-      link.addEventListener('click', () => {
-        navLinks.forEach(link => link.classList.remove('link-active'));
-        link.classList.add('link-active');
-      })
-    })
-    </script>
-    <script>
-      tailwind.config = {
-        darkMode: 'class'
-      }
-    </script>
-    <script src="themeswitcher.js"></script>
+  <script src="js/getGitHubProfilePicture.js"></script>
+  <script src="js/activeNavLinks.js"></script>
+  <script src="js/tailwind.config.js"></script>
+  <script src="js/themeSwitcher.js"></script>
+  <script src="js/getGitHubProfilePicture.js"></script>
 </body>
 
 </html>
