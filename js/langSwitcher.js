@@ -29,6 +29,12 @@ document.addEventListener('DOMContentLoaded', () => {
         projectNamesText.push(project.innerText)
     })
 
+    const projectDescriptions = document.querySelectorAll('.projects-list li p')
+    const projectDescriptionsText = []
+    projectDescriptions.forEach((project) => {
+        projectDescriptionsText.push(project.innerText)
+    })
+
     const contactsTitle = document.querySelector('.contacts h2')
     const contactsTitleText = contactsTitle.innerText
 
@@ -54,6 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     aboutTextText,
                     projectsTitleText,
                     projectNamesText,
+                    projectDescriptionsText,
                     contactsTitleText,
                 ], 
                 target: html.lang,
@@ -73,28 +80,34 @@ document.addEventListener('DOMContentLoaded', () => {
                 })
                 
                 const profession = document.querySelector('.profession') 
-                profession.innerText = data.data.translations[4].translatedText
+                profession.innerText = data.data.translations[3].translatedText
 
                 const aboutTitle = document.querySelector('.about h2')
-                aboutTitle.innerText = data.data.translations[5].translatedText
+                aboutTitle.innerText = data.data.translations[4].translatedText
 
                 const aboutCall = document.querySelector('.about h3')
-                aboutCall.innerText = data.data.translations[6].translatedText
+                aboutCall.innerText = data.data.translations[5].translatedText
                 
                 const aboutText = document.querySelector('.about p')
-                aboutText.innerText = data.data.translations[7].translatedText
+                aboutText.innerText = data.data.translations[6].translatedText
 
                 const projectsTitle = document.querySelector('.projects h2')
-                projectsTitle.innerText = data.data.translations[8].translatedText
-                
+                projectsTitle.innerText = data.data.translations[7].translatedText
+            
                 const projectNames = document.querySelectorAll('.projects-list li h3')
-                projectNames[0].innerText = data.data.translations[9].translatedText
-                projectNames[1].innerText = data.data.translations[10].translatedText
-                projectNames[2].innerText = data.data.translations[11].translatedText
-                projectNames[3].innerText = data.data.translations[12].translatedText
+                projectNames[0].innerText = data.data.translations[8].translatedText
+                projectNames[1].innerText = data.data.translations[9].translatedText
+                projectNames[2].innerText = data.data.translations[10].translatedText
+                projectNames[3].innerText = data.data.translations[11].translatedText
+
+                const projectDescriptions = document.querySelectorAll('.projects-list li p')
+                projectDescriptions[0].innerText = data.data.translations[12].translatedText
+                projectDescriptions[1].innerText = data.data.translations[13].translatedText
+                projectDescriptions[2].innerText = data.data.translations[14].translatedText
+                projectDescriptions[3].innerText = data.data.translations[15].translatedText
 
                 const contactsTitle = document.querySelector('.contacts h2')
-                contactsTitle.innerText = data.data.translations[13].translatedText
+                contactsTitle.innerText = data.data.translations[16].translatedText
 
             })
             .catch((error) => {
