@@ -1,3 +1,7 @@
+html{
+  scroll-behavior: smooth;
+}
+
 .link-active{
     background-color: #34d399;
     color: #f5f5f5;

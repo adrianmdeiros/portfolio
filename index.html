@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br" class="scroll-smooth">
+<html lang="pt" class="scroll-smooth">
 
 <head>
   <meta charset="UTF-8">
@@ -11,11 +11,11 @@
   <title>Portfólio - Adrian L. Medeiros</title>
 </head>
 
-<body class="h-screen w-full bg-neutral-100 dark:bg-neutral-900 font-sans text-neutral-900 dark:text-neutral-100 ">
+<body class=" h-screen w-full bg-neutral-100 dark:bg-neutral-900 font-sans text-neutral-900 dark:text-neutral-100 ">
   <header
-    class="header flex items-center justify-center px-9 h-20 bg-neutral-100 dark:bg-neutral-900 sticky w-full top-0 z-10 shadow-sm ease-in ease-out">
+    class="header w-full flex items-center justify-center px-9 h-20 bg-neutral-100 dark:bg-neutral-900 fixed top-0 z-10 shadow-sm ease-in ease-out">
     <nav>
-      <ul class="nav-links flex gap-4 items-center">
+      <ul class="nav-links flex gap-4 items-center ">
         <li><a
             class="link-active px-4 py-2 rounded-lg hover:bg-emerald-400 hover:text-neutral-100 active:bg-emerald-400 font-semibold"
             href="#bio">Sobre</a></li>
@@ -23,11 +23,8 @@
             class="px-4 py-2 rounded-lg hover:bg-emerald-400 hover:text-neutral-100 active:bg-emerald-400 font-semibold  "
             href="#projects">Projetos</a></li>
         <li><a
-            class="px-4 py-2 rounded-lg hover:bg-emerald-400 hover:text-neutral-100 active:bg-emerald-400 font-semibold  "
-            href="#contacts">Contatos</a></li>
-        <li><a
-            class="flex items-center gap-2 px-4 py-2 rounded-lg hover:bg-emerald-400 hover:text-neutral-100 active:bg-emerald-400 font-semibold"
-            href="">CV</a></li>
+            class="px-4 py-2 rounded-lg hover:bg-emerald-400 hover:text-neutral-100 active:bg-emerald-400 font-semibold "
+            href="#hard-skills-and-contacts">Contato</a></li>
       </ul>
     </nav>
     <div class="absolute right-4 flex gap-2">
@@ -35,23 +32,55 @@
         class="theme-switcher-btn rounded-full border border-neutral-900/20 dark:border-neutral-100/20 p-2 size-5 hover:bg-neutral-100/5 cursor-pointer z-10 text-yellow-500 dark:text-neutral-100"
         name="sunny-outline" /></ion-icon>
       <ion-icon
-        class="theme-switcher-btn rounded-full border border-neutral-900/20 dark:border-neutral-100/20 p-2 size-5 hover:bg-neutral-100/5 cursor-pointer z-10 text-yellow-500 dark:text-neutral-100"
+        class="lang-switcher-btn rounded-full border border-neutral-900/20 dark:border-neutral-100/20 p-2 size-5 hover:bg-neutral-100/5 cursor-pointer z-10 text-yellow-500 dark:text-neutral-100"
         name="language-outline" /></ion-icon>
     </div>
   </header>
-  <main class="px-16 grid place-content-center gap-24 pb-12 mb-14">
-    <section id="bio" class="bio pt-36 flex flex-wrap gap-24 mx-auto">
-      <div class="perfil flex gap-12">
+  <main class="px-16 grid place-content-center gap-24 pb-12 mb-14 mx-auto">
+    <a class="fixed bottom-4 right-4 px-4 py-2 text-neutral-100 bg-emerald-400 dark:bg-emerald-400 rounded-xl shadow-sm hover:bg-emerald-500 dark:hover:bg-emerald-500" href="download/Currículo - Adrian Lima Medeiros 31012024.pdf" download>
+      CV
+      <ion-icon class="text-neutral-100" name="download"></ion-icon>
+    </a>
+    <section id="bio" class="bio pt-36 grid xl:grid-cols-2 grid-cols-1 gap-24 mx-auto opacity-0 duration-700">
+      <div class="perfil flex gap-12 duration-700">
         <div class="grid place-content-center">
           <h1 class="text-3xl font-bold text-end">Adrian Lima Medeiros</h1>
-          <h2 class="text-2xl dark:text-neutral-400 text-end">Analista de Sistemas & <br> Desenvolvedor Full Stack
+          <h2 class="profession text-2xl dark:text-neutral-400 text-end mb-4">Analista de Sistemas & <br> Desenvolvedor
+            Full
+            Stack
           </h2>
+          <ul class="gap-4 *:text-2xl flex items-center justify-end text-end">
+            <li title="JavaScript">
+              <i class="devicon-javascript-plain colored"></i>
+            </li>
+            <li title="TypeScript">
+              <i class="devicon-typescript-plain colored"></i>
+            </li>
+            <li title="React.js">
+              <i class="devicon-react-original colored"></i>
+            </li>
+            <li title="Tailwind">
+              <i class="devicon-tailwindcss-plain colored"></i>
+            </li>
+            <li title="Express.js">
+              <i class="devicon-express-original"></i>
+            </li>
+            <li title="Prisma ORM">
+              <img class="min-w-6 h-6"
+                src="https://creazilla-store.fra1.digitaloceanspaces.com/icons/3256965/file-type-prisma-icon-md.png" />
+            </li>
+            <li title="MySQL">
+              <i class="devicon-mysql-plain colored"></i>
+            </li>
+          </ul>
         </div>
+        <svg class="loader animate-pulse bg-neutral-700 rounded-full h-48 w-48"></svg>
         <img
-          class=" mx-auto perfil-img min-h-48 max-h-52 ring ring-emerald-400 rounded-full shadow-2xl dark:shadow-emerald-600"
+          class="perfil-img hidden mx-auto  min-h-48 max-h-52 ring ring-emerald-400 rounded-full shadow-2xl dark:shadow-emerald-600"
           alt="Foto do rosto de Adrian Lima Medeiros">
+
       </div>
-      <div class="about flex items-center gap-14 max-w-lg">
+      <div class="about flex items-center gap-14 max-w-lg duration-700">
         <div class="grid gap-2">
           <h2
             class="text-2xl font-bold mb-4 before:content-[''] before:inline-block before:mr-1 before:bg-emerald-400 before:h-5 before:w-1 before:text-emerald-400">
@@ -71,14 +100,14 @@
         </div>
       </div>
     </section>
-    <div id="projects" class="grid place-content-center pt-24 mx-auto">
+    <div id="projects" class="projects grid place-content-center pt-28 mx-auto opacity-0 duration-700">
       <h2
         class="text-2xl font-bold mb-8 before:content-[''] before:inline-block before:mr-1 before:bg-emerald-400 before:h-5 before:w-1 before:text-emerald-400">
         Projetos
       </h2>
       <ul
         class="projects-list grid xl:grid-cols-2 grid-cols-1 gap-10 items-center dark:text-neutral-300 *:items-center *:gap-6 *:border *:border-neutral-900/10 dark:*:border-neutral-100/10 dark:*:bg-neutral-800 *:p-4 *:rounded-xl hover:*:shadow-xl *:max-w-xl *:transition-shadow *:min-h-48 sm:*:flex *:grid">
-        <li class="w-full">
+        <li class="w-full opacity-0 duration-700">
           <img class="sm:max-w-56 min-h-32 rounded-lg" src="assets/preview.gif"
             alt="gif com um usuário digitando tarefas em uma to-do list">
           <div>
@@ -93,7 +122,7 @@
             </div>
           </div>
         </li>
-        <li>
+        <li class="duration-700 opacity-0 w-full">
           <img class="sm:max-w-56 min-h-32 rounded-lg" src="assets/site-advocacia.png"
             alt="gif com um usuário digitando tarefas em uma to-do list">
           <div>
@@ -108,7 +137,7 @@
             </div>
           </div>
         </li>
-        <li>
+        <li class="duration-700 opacity-0">
           <img class="sm:max-w-56 min-h-32 rounded-lg" src="assets/react-calculator.png"
             alt="gif com um usuário digitando tarefas em uma to-do list">
           <div>
@@ -123,7 +152,7 @@
             </div>
           </div>
         </li>
-        <li>
+        <li class="duration-700 opacity-0">
           <img class="sm:max-w-56 min-h-32 rounded-lg"
             src="https://dkrn4sk0rn31v.cloudfront.net/uploads/2019/07/05112250/SPRING-BOOT.png"
             alt="gif com um usuário digitando tarefas em uma to-do list">
@@ -139,13 +168,15 @@
         </li>
       </ul>
     </div>
-    <section class="flex flex-wrap gap-24 pt-24">
-      <div class="hard-skills max-w-xl">
+    <section id="hard-skills-and-contacts"
+      class="skills-and-contacts grid xl:grid-cols-2 grid-cols-1 gap-24 pt-24 opacity-0 duration-700">
+      <div class="hard-skills max-w-xl duration-700">
         <h2
           class="text-2xl font-bold mb-8 before:content-[''] before:inline-block before:mr-1 before:bg-emerald-400 before:h-5 before:w-1 before:text-emerald-400">
           Hard Skills
         </h2>
         <div class="techs">
+          <h3 class="text-xl mb-4 italic text-neutral-400 font-semibold">Front-end</h3>
           <ul class="gap-6 *:text-6xl flex flex-wrap">
             <li title="HTML5">
               <i class="devicon-html5-plain colored"></i>
@@ -165,6 +196,11 @@
             <li title="Tailwind">
               <i class="devicon-tailwindcss-plain colored"></i>
             </li>
+          </ul>
+          <br>
+          <br>
+          <h3 class="text-xl mb-4 italic text-neutral-400 font-semibold">Back-end</h3>
+          <ul class="gap-6 *:text-6xl flex flex-wrap">
             <li title="Node.js">
               <i class="devicon-nodejs-plain colored"></i>
             </li>
@@ -179,8 +215,8 @@
               <i class="devicon-mysql-plain colored"></i>
             </li>
             <!-- <li title="Docker">
-            <i class="devicon-docker-plain colored"></i>
-          </li> -->
+              <i class="devicon-docker-plain colored"></i>
+            </li> -->
             <li title="Java">
               <i class="devicon-java-plain colored"></i>
             </li>
@@ -190,7 +226,7 @@
           </ul>
         </div>
       </div>
-      <div id="contacts">
+      <div id="contacts" class="contacts duration-700">
         <h2
           class="text-2xl font-bold mb-8 before:content-[''] before:inline-block before:mr-1 before:bg-emerald-400 before:h-5 before:w-1 before:text-emerald-400">
           Contato
@@ -225,9 +261,8 @@
       </div>
     </section>
   </main>
-  <footer class=" w-full h-44 grid gap-6 place-content-center ">
-
-    <p class=" text-neutral-900 dark:text-neutral-100">
+  <footer class="w-full h-32 grid gap-6 place-content-center opacity-0 duration-700">
+    <p class=" text-neutral-900 dark:text-neutral-100 font-semibold">
       Made with <span class="text-emerald-400">❤</span> by adrianmedeirosdev
     </p>
   </footer>
@@ -237,7 +272,8 @@
   <script src="js/activeNavLinks.js"></script>
   <script src="js/tailwind.config.js"></script>
   <script src="js/themeSwitcher.js"></script>
-  <script src="js/getGitHubProfilePicture.js"></script>
+  <script src="js/introanimations.js"></script>
+  <script src="js/langSwitcher.js"></script>
 </body>
 
 </html>

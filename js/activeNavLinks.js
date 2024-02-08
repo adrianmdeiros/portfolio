@@ -6,3 +6,4 @@ navLinks.forEach(link => {
     link.classList.add('link-active');
   })
 })
+
