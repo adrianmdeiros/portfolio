@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'x-goog-api-key': 'AIzaSyA7vWWkzOgbxUMoq_39zAl8y9l34fz5pDg'
+                '
             },
             body: JSON.stringify({
                 q: [
