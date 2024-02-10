@@ -13,18 +13,28 @@
 
 <body class=" h-screen w-full bg-neutral-100 dark:bg-neutral-900 font-sans text-neutral-900 dark:text-neutral-100 ">
   <header
-    class="header w-full flex items-center justify-center px-9 h-20 bg-neutral-100 dark:bg-neutral-900 fixed top-0 z-10 shadow-sm ease-in ease-out">
+    class="header w-full flex items-center px-9 h-20 bg-neutral-100 dark:bg-neutral-900 fixed top-0 z-10 shadow-sm ease-in ease-out">
     <nav>
-      <ul class="nav-links flex gap-4 items-center ">
+      <ion-icon class="hamburguer text-3xl cursor-pointer" name="menu-outline"></ion-icon>
+      <ul class="nav-links dark:bg-neutral-900">
         <li><a
-            class="link-active px-4 py-2 rounded-lg hover:bg-emerald-400 hover:text-neutral-100 active:bg-emerald-400 font-semibold"
-            href="#bio">Sobre</a></li>
+            class="link-active px-4 py-2 flex items-center gap-1 rounded-lg hover:bg-emerald-400 hover:text-neutral-100 active:bg-emerald-400 font-semibold"
+            href="#bio">
+            Sobre
+          </a>
+        </li>
         <li><a
-            class="px-4 py-2 rounded-lg hover:bg-emerald-400 hover:text-neutral-100 active:bg-emerald-400 font-semibold  "
-            href="#projects">Projetos</a></li>
+          class="px-4 py-2  flex items-center gap-1 rounded-lg hover:bg-emerald-400 hover:text-neutral-100 active:bg-emerald-400 font-semibold  "
+          href="#projects">
+          Projetos
+        </a>
+      </li>
         <li><a
             class="px-4 py-2 rounded-lg hover:bg-emerald-400 hover:text-neutral-100 active:bg-emerald-400 font-semibold "
-            href="#hard-skills-and-contacts">Contato</a></li>
+            href="#contacts">
+            Contato
+          </a>
+        </li>
       </ul>
     </nav>
     <div class="absolute right-4 flex gap-2">
@@ -36,20 +46,24 @@
         name="language-outline" /></ion-icon>
     </div>
   </header>
-  <main class="px-16 grid place-content-center gap-24 pb-12 mb-14 mx-auto">
-    <a class="fixed bottom-4 right-4 px-4 py-2 text-neutral-100 bg-emerald-400 dark:bg-emerald-400 rounded-xl shadow-sm hover:bg-emerald-500  dark:hover:bg-emerald-500" href="download/Currículo - Adrian Lima Medeiros 31012024.pdf" download>
+  <main class="px-10 grid place-content-center gap-24 pb-12 mb-14 mx-auto">
+    <a class="font-semibold fixed bottom-4 right-4 px-4 py-2 text-neutral-100 bg-emerald-400 dark:bg-emerald-400 rounded-lg shadow-sm hover:bg-emerald-500  dark:hover:bg-emerald-500"
+      href="download/Currículo - Adrian Lima Medeiros 31012024.pdf" download>
       CV
       <ion-icon class="text-neutral-100" name="download"></ion-icon>
     </a>
     <section id="bio" class="bio pt-36 grid xl:grid-cols-2 grid-cols-1 gap-24 mx-auto opacity-0 duration-700">
-      <div class="perfil flex gap-12 duration-700">
+      <div class="perfil flex flex-wrap  gap-10 w-full ">
+        <img
+        class="perfil-img hidden mx-auto max-h-48 ring ring-emerald-400 rounded-full shadow-2xl dark:shadow-emerald-600"
+        alt="Foto do rosto de Adrian Lima Medeiros">
         <div class="grid place-content-center">
-          <h1 class="text-3xl font-bold text-end">Adrian Lima Medeiros</h1>
-          <h2 class="profession text-2xl dark:text-neutral-400 text-end mb-4">Analista de Sistemas & <br> Desenvolvedor
+          <h1 class="text-3xl font-bold text-center sm:text-end">Adrian Lima Medeiros</h1>
+          <h2 class="profession text-2xl dark:text-neutral-400 text-center sm:text-end mb-4">Analista de Sistemas & <br> Desenvolvedor
             Full
             Stack
           </h2>
-          <ul class="gap-4 *:text-2xl flex items-center justify-end text-end">
+          <ul class="gap-4 *:text-2xl flex items-center justify-center sm:justify-end">
             <li title="JavaScript">
               <i class="devicon-javascript-plain colored"></i>
             </li>
@@ -66,7 +80,7 @@
               <i class="devicon-express-original"></i>
             </li>
             <li title="Prisma ORM">
-              <img class="min-w-6 h-6"
+              <img class="w-6 h-6"
                 src="https://creazilla-store.fra1.digitaloceanspaces.com/icons/3256965/file-type-prisma-icon-md.png" />
             </li>
             <li title="MySQL">
@@ -75,15 +89,12 @@
           </ul>
         </div>
         <svg class="loader animate-pulse bg-neutral-700 rounded-full h-48 w-48"></svg>
-        <img
-          class="perfil-img hidden mx-auto  min-h-48 max-h-52 ring ring-emerald-400 rounded-full shadow-2xl dark:shadow-emerald-600"
-          alt="Foto do rosto de Adrian Lima Medeiros">
-
+        
       </div>
       <div class="about flex items-center gap-14 max-w-lg duration-700">
         <div class="grid gap-2">
           <h2
-            class="text-2xl font-bold mb-4 before:content-[''] before:inline-block before:mr-1 before:bg-emerald-400 before:h-5 before:w-1 before:text-emerald-400">
+            class="text-2xl flex items-center gap-1 font-bold mb-4 before:content-[''] before:inline-block before:mr-1 before:bg-emerald-400 before:h-6 before:w-1 before:rounded-full before:text-emerald-400">
             Sobre mim
           </h2>
           <h3 class="text-lg font-bold text-neutral-800 dark:text-neutral-300">E aí, beleza? 👋</h3>
@@ -102,7 +113,7 @@
     </section>
     <div id="projects" class="projects grid place-content-center pt-28 mx-auto opacity-0 duration-700">
       <h2
-        class="text-2xl font-bold mb-8 before:content-[''] before:inline-block before:mr-1 before:bg-emerald-400 before:h-5 before:w-1 before:text-emerald-400">
+        class="text-2xl flex items-center  gap-1 font-bold mb-4 before:content-[''] before:inline-block before:mr-1 before:bg-emerald-400 before:h-5 before:w-1 before:rounded-full before:text-emerald-400">
         Projetos
       </h2>
       <ul
@@ -169,10 +180,10 @@
       </ul>
     </div>
     <section id="hard-skills-and-contacts"
-      class="skills-and-contacts grid xl:grid-cols-2 grid-cols-1 gap-24 pt-24 opacity-0 duration-700">
-      <div class="hard-skills max-w-xl duration-700">
+      class="skills-and-contacts grid xl:grid-cols-2 grid-cols-1 gap-24 opacity-0 duration-700">
+      <div class="hard-skills max-w-xl duration-700 pt-24">
         <h2
-          class="text-2xl font-bold mb-8 before:content-[''] before:inline-block before:mr-1 before:bg-emerald-400 before:h-5 before:w-1 before:text-emerald-400">
+          class="text-2xl flex items-center  gap-1 font-bold mb-4 before:content-[''] before:inline-block before:mr-1 before:bg-emerald-400 before:h-5 before:w-1 before:rounded-full before:text-emerald-400">
           Hard Skills
         </h2>
         <div class="techs">
@@ -226,9 +237,9 @@
           </ul>
         </div>
       </div>
-      <div id="contacts" class="contacts duration-700">
+      <div id="contacts" class="contacts pt-24 duration-700">
         <h2
-          class="text-2xl font-bold mb-8 before:content-[''] before:inline-block before:mr-1 before:bg-emerald-400 before:h-5 before:w-1 before:text-emerald-400">
+          class="text-2xl flex items-center gap-1 font-bold mb-4 before:content-[''] before:inline-block before:mr-1 before:bg-emerald-400 before:h-5 before:w-1 before:rounded-full before:text-emerald-400">
           Contato
         </h2>
         <ul class="flex gap-6 text-emerald-400">
@@ -266,6 +277,7 @@
       Made with <span class="text-emerald-400">❤</span> by adrianmedeirosdev
     </p>
   </footer>
+  <div class="fecha-menu isClosed"></div>
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   <script src="js/getGitHubProfilePicture.js"></script>
@@ -274,6 +286,7 @@
   <script src="js/themeSwitcher.js"></script>
   <script src="js/introanimations.js"></script>
   <script src="js/langSwitcher.js"></script>
+  <script src="js/menuResponsivity.js"></script>
 </body>
 
 </html>
