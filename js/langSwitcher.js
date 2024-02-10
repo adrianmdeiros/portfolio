@@ -38,6 +38,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const contactsTitle = document.querySelector('.contacts h2')
     const contactsTitleText = contactsTitle.innerText
 
+    const projectViewButtons = document.querySelectorAll('.projects-list li .view-btn')
+    const projectViewButtonsText = []
+    projectViewButtons.forEach((project) => {
+        projectViewButtonsText.push(project.innerText)
+    })
+
     langSwitcherBtn.addEventListener('click', () => {
         if (html.lang === 'pt') {
             html.lang = 'en'
@@ -62,6 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     projectNamesText,
                     projectDescriptionsText,
                     contactsTitleText,
+                    projectViewButtonsText
                 ], 
                 target: html.lang,
                 format: 'text'
@@ -108,6 +115,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 const contactsTitle = document.querySelector('.contacts h2')
                 contactsTitle.innerText = data.data.translations[16].translatedText
+
+                const projectViewButtons = document.querySelectorAll('.projects-list li .view-btn')
+                projectViewButtons[0].innerText = data.data.translations[17].translatedText 
+                projectViewButtons[1].innerText = data.data.translations[18].translatedText 
+                projectViewButtons[2].innerText = data.data.translations[19].translatedText 
 
             })
             .catch((error) => {
