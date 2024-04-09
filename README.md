@@ -12,7 +12,7 @@
 
 This project was developed using these technologies:
 
-- HTML5, Tailwind CSS and JavaScript.
+- HTML, CSS, Tailwind CSS and JavaScript.
 - Git and Github
 
 
