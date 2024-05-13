@@ -1,7 +1,7 @@
 const profilePicture = document.querySelector(".perfil-img")
 const loader = document.querySelector('.loader')
 
-fetch('https://api.github.com/users/adrianmedeirosdev')
+fetch('https://api.github.com/users/adrianmdeiros')
   .then(response => response.json())
   .then(data => {
     profilePicture.src = data.avatar_url

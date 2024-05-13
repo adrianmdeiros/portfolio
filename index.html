@@ -15,8 +15,8 @@
   <header
     class="header w-full flex items-center px-4 h-20 bg-neutral-100 dark:bg-neutral-900 fixed top-0 z-10 shadow-sm ease-in ease-out">
     <nav>
-        <ion-icon class="hamburguer text-3xl cursor-pointer" name="menu-outline"></ion-icon>
-        
+      <ion-icon class="hamburguer text-3xl cursor-pointer" name="menu-outline"></ion-icon>
+
       <ul class="nav-links dark:bg-neutral-900">
         <li><a
             class="link-active px-4 py-2 flex items-center gap-1 rounded-lg hover:bg-emerald-400 hover:text-neutral-100 active:bg-emerald-400 font-semibold"
@@ -31,10 +31,15 @@
           </a>
         </li>
         <li><a
+            class="px-4 py-2  flex items-center gap-1 rounded-lg hover:bg-emerald-400 hover:text-neutral-100 active:bg-emerald-400 font-semibold  "
+            href="#education">
+            Educação
+          </a>
+        </li>
+        <li><a
             class="px-4 py-2 rounded-lg hover:bg-emerald-400 hover:text-neutral-100 active:bg-emerald-400 font-semibold "
             href="#contacts">
-          
-            Contato
+            Contatos
           </a>
         </li>
       </ul>
@@ -52,15 +57,14 @@
       CV
     </a>
     <section id="bio" class="bio pt-36 grid xl:grid-cols-2 grid-cols-1 gap-24 mx-auto opacity-0 duration-700">
-      <div class="perfil flex flex-wrap  gap-10 w-full ">
-        <img
-          class="perfil-img hidden mx-auto max-h-48 ring ring-emerald-400 rounded-full shadow-2xl dark:shadow-emerald-600"
+      <div class="perfil flex flex-wrap gap-10 w-full items-center">
+        <img src="./assets/eu.jpeg"
+          class="perfil-img mx-auto max-h-48 w-48 object-cover ring-emerald-400 rounded-full dark:shadow-emerald-600"
           alt="Foto do rosto de Adrian Lima Medeiros">
         <div class="grid place-content-center">
           <h1 class="text-3xl font-bold text-center sm:text-end">Adrian Lima Medeiros</h1>
-          <h2 class="profession text-2xl dark:text-neutral-400 text-center sm:text-center mb-4">
+          <h2 class="profession text-2xl dark:text-neutral-400 text-center sm:text-start mb-4">
             Desenvolvedor
-            Full Stack
           </h2>
           <ul class="gap-4 *:text-2xl flex items-center justify-center sm:justify-end">
             <li title="JavaScript">
@@ -90,8 +94,6 @@
             </li>
           </ul>
         </div>
-        <svg class="loader animate-pulse bg-neutral-700 rounded-full h-48 w-48"></svg>
-
       </div>
       <div class="about flex items-center gap-14 max-w-lg duration-700">
         <div class="grid gap-2">
@@ -110,93 +112,67 @@
             de
             novos conhecimentos e desafios na área da programação.
           </p>
+          <p class="text-justify leading-6 tracking-tight text-lg font-medium text-neutral-700 dark:text-neutral-400 break-keep">
+            Busco oportunidade na área de Tecnologia da
+            Informação para contribuir com meus
+            conhecimentos e habilidades, buscando
+            aprendizagem e evolução.
+          </p>
         </div>
       </div>
     </section>
-    <div id="projects" class="projects grid place-content-center pt-28 mx-auto opacity-0 duration-700">
-      <h2
-        class="text-2xl flex items-center  gap-1 font-bold mb-4 before:content-[''] before:inline-block before:mr-1 before:bg-emerald-400 before:h-5 before:w-1 before:rounded-full before:text-emerald-400">
-        Projetos
-      </h2>
-      <!-- <ul
-        class="projects-list grid xl:grid-cols-2 grid-cols-1 gap-10 items-center dark:text-neutral-300 *:items-center *:gap-6 *:border *:border-neutral-900/10 dark:*:border-neutral-100/10 dark:*:bg-neutral-800 *:p-4 *:rounded-xl hover:*:shadow-xl *:max-w-xl *:transition-shadow *:min-h-48 sm:*:flex *:grid">
-        <li class="w-full opacity-0 duration-700">
-          <img class="sm:max-w-56 min-h-32 rounded-lg" src="assets/preview.gif"
-            alt="gif com um usuário digitando tarefas em uma to-do list">
-          <div>
-            <h3 class="text-xl font-bold">To-do</h3>
-            <p class="mb-4">Um to-do feito em HTML5, CSS3 e JavaScript.</p>
-            <div class="flex gap-2 *:font-semibold">
-              <a target="_blank" href="https://adrianmedeirosdev.github.io/to-do/"
-                class="view-btn flex gap-2 items-center px-4 py-1 bg-emerald-500 text-neutral-100 rounded-xl hover:bg-emerald-600">
-
-                Abrir Projeto
-              </a>
-              <a target="_blank" href="https://github.com/adrianmedeirosdev/to-do"
-                class="px-4 py-1  rounded-xl flex items-center gap-1 hover:text-neutral-100 hover:bg-neutral-900 border-neutral-900/10">
-                <ion-icon class="size-5" name="logo-github"></ion-icon> GitHub</a>
+      <div id="projects" class="projects grid place-content-center pt-28 opacity-0 duration-700" >
+        <h2
+          class="text-2xl flex items-center gap-1 font-bold mb-4 before:content-[''] before:inline-block before:mr-1 before:bg-emerald-400 before:h-5 before:w-1 before:rounded-full before:text-emerald-400">
+          Projetos
+        </h2>
+        <ul
+          class="projects-list grid xl:grid-cols-2 grid-cols-1 gap-10 items-center dark:text-neutral-300 *:items-center *:gap-6 *:border *:border-neutral-900/10 dark:*:border-neutral-100/10 dark:*:bg-neutral-800 *:p-4 *:rounded-xl hover:*:shadow-xl *:max-w-xl *:transition-shadow *:min-h-48 sm:*:flex *:grid">
+          <li class="duration-700 opacity-0 w-full ">
+            <img class="sm:max-w-56 min-h-32 rounded-lg object-cover" src="assets/jwt.png" alt="site advocacia">
+            <div>
+              <h3 class="text-xl font-bold">Exemplo de API com Autenticação JWT</h3>
+              <p class="mb-4">Projeto foi feito com Node.js, TypeScript, Prisma ORM e outras bibliotecas.</p>
+              <div class="flex gap-2 *:font-semibold">
+                <a target="_blank" href="https://github.com/adrianmdeiros/jwt-auth-api-example"
+                  class="px-2 py-1  rounded-lg flex items-center gap-2 hover:text-neutral-100 hover:bg-neutral-900 b">
+                  <ion-icon class="size-5" name="logo-github"></ion-icon>
+                  GitHub
+                </a>
+              </div>
             </div>
-          </div>
-        </li>
-        <li class="duration-700 opacity-0 w-full">
-          <img class="sm:max-w-56 min-h-32 rounded-lg" src="assets/site-advocacia.png"
-            alt="gif com um usuário digitando tarefas em uma to-do list">
-          <div>
-            <h3 class="text-xl font-bold">Exemplo de Site de Advocacia</h3>
-            <p class="mb-4">Exemplo de site para uma advocacia feito com HTML5, CSS3, e JavaScript.</p>
-            <div class="flex gap-2 *:font-semibold">
-              <a target="_blank" href="https://adrianmedeirosdev.github.io/site-advocacia/"
-                class="view-btn flex gap-2 items-center px-4 py-1 bg-emerald-500 text-neutral-100 rounded-xl hover:bg-emerald-600">
-                Abrir Projeto
-              </a>
-              <a target="_blank" href="https://github.com/adrianmedeirosdev/site-advocacia"
-                class="px-4 py-1  rounded-xl flex items-center gap-1 hover:text-neutral-100 hover:bg-neutral-900 b">
-                <ion-icon class="size-5" name="logo-github"></ion-icon> GitHub</a>
-            </div>
-          </div>
-        </li>
-        <li class="duration-700 opacity-0">
-          <img class="sm:max-w-56 min-h-32 rounded-lg" src="assets/react-calculator.png"
-            alt="gif com um usuário digitando tarefas em uma to-do list">
-          <div>
-            <h3 class="text-xl font-bold">Calculadora</h3>
-            <p class="mb-4">Calculadora simples feita com TypeScript, React e Styled Components.</p>
-            <div class="flex gap-2 *:font-semibold">
-              <a target="_blank" href="https://adrianmedeirosdev-calculator-react.vercel.app"
-                class="view-btn flex gap-2 items-center px-4 py-1 bg-emerald-500 text-neutral-100 rounded-xl hover:bg-emerald-600">
-                Abrir Projeto
-              </a>
-              <a target="_blank" href="https://github.com/adrianmedeirosdev/simple-calculator-react"
-                class="px-4 py-1  rounded-xl flex items-center gap-1 hover:text-neutral-100 hover:bg-neutral-900">
-                <ion-icon class="size-5" name="logo-github"></ion-icon>GitHub</a>
-            </div>
-          </div>
-        </li>
-        <li class="duration-700 opacity-0">
-          <img class="sm:max-w-56 min-h-32 rounded-lg"
-            src="https://dkrn4sk0rn31v.cloudfront.net/uploads/2019/07/05112250/SPRING-BOOT.png"
-            alt="gif com um usuário digitando tarefas em uma to-do list">
-          <div>
-            <h3 class="text-xl font-bold">Api Spring de Gerenciamento de Partidas de Futebol</h3>
-            <p class="mb-4">Uma api simples feita com Java e Spring para gerenciar partidas de futebol.</p>
-            <div class="flex gap-2 *:font-semibold">
-              <a target="_blank" href="https://github.com/adrianmedeirosdev/championship-manager-spring-api"
-                class="px-4 py-1  rounded-xl flex items-center gap-1 hover:text-neutral-100 hover:bg-neutral-900 border-neutral-900/10">
-                <ion-icon class="size-5" name="logo-github"></ion-icon>GitHub</a>
-            </div>
-          </div>
-        </li>
-      </ul> -->
+          </li>
+        </ul>
+      </div>
+      <section id="education" class="pt-24 opacity-0 duration-700 blur">
+        <h2
+          class="text-2xl flex items-center  gap-1 font-bold mb-4 before:content-[''] before:inline-block before:mr-1 before:bg-emerald-400 before:h-5 before:w-1 before:rounded-full before:text-emerald-400">
+          Educação
+        </h2>
+        <dl>
+          <dt class="text-md font-bold text-neutral-300">Ensino Médio</dt>
+          <dd class="*:text-neutral-400">
+            <p>Colégio Santa Teresa.</p>
+            <p>2016 - 2018 - Completo.</p>
+          </dd>
+          <br>
+          <dt class="text-md font-bold text-neutral-300">Ensino Superior</dt>
+          <dd class="*:text-neutral-400">
+            <p>Bacharelado em <b><i>Sistemas de Informação</i></b>.</p>
+            <p>Instituto Federal de Eduucação, Ciência e Tecnologia do Maranhão.</p>
+            <p>2019 - 2025 - Em andamento.</p>
+          </dd>
+        </dl>
+      </section>
     </div>
     <section id="hard-skills-and-contacts"
       class="skills-and-contacts grid xl:grid-cols-2 grid-cols-1 gap-24 opacity-0 duration-700">
-      <div class="hard-skills max-w-xl duration-700 pt-24">
+      <div class="hard-skills max-w-xl duration-700 ">
         <h2
           class="text-2xl flex items-center  gap-1 font-bold mb-4 before:content-[''] before:inline-block before:mr-1 before:bg-emerald-400 before:h-5 before:w-1 before:rounded-full before:text-emerald-400">
-          Tecnologias 
+          Tecnologias
         </h2>
         <div class="techs">
-          <h3 class="text-xl mb-4 italic text-neutral-400 font-semibold">Front-end</h3>
           <ul class="gap-6 *:text-6xl flex flex-wrap">
             <li title="JavaScript">
               <i class="devicon-javascript-plain colored"></i>
@@ -213,7 +189,6 @@
           </ul>
           <br>
           <br>
-          <h3 class="text-xl mb-4 italic text-neutral-400 font-semibold">Back-end</h3>
           <ul class="gap-6 *:text-6xl flex flex-wrap">
             <li title="Node.js">
               <i class="devicon-nodejs-plain colored"></i>
@@ -231,16 +206,16 @@
           </ul>
         </div>
       </div>
-      <div id="contacts" class="contacts pt-24 duration-700">
+      <div id="contacts" class="contacts  duration-700">
         <h2
           class="text-2xl flex items-center gap-1 font-bold mb-4 before:content-[''] before:inline-block before:mr-1 before:bg-emerald-400 before:h-5 before:w-1 before:rounded-full before:text-emerald-400">
-          Contato
+          Contatos
         </h2>
-        <h3 class="flex items-center gap-2 text-xl mb-4 italic text-neutral-400 font-semibold"> 
+        <h3 class="flex items-center gap-2 text-xl mb-4 italic text-neutral-400 font-semibold">
           <ion-icon name="mail"></ion-icon>
           lima.adrian13@gmail.com
         </h3>
-        <h3 class="flex items-center gap-2 text-xl mb-4 italic text-neutral-400 font-semibold"> 
+        <h3 class="flex items-center gap-2 text-xl mb-4 italic text-neutral-400 font-semibold">
           <ion-icon name="call"></ion-icon>
           +55 (98) 99165-0677
         </h3>
@@ -281,13 +256,13 @@
   </main>
   <footer class="w-full h-32 grid gap-6 place-content-center opacity-0 duration-700">
     <p class=" text-neutral-900 dark:text-neutral-100 font-semibold">
-      Made with <span class="text-emerald-400">❤</span> by adrianmedeirosdev
+      Made with <span class="text-emerald-400">❤</span> by adrianmdeiros
     </p>
   </footer>
   <div class="fecha-menu isClosed"></div>
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-  <script src="js/getGitHubProfilePicture.js"></script>
+  <!-- <script src="js/getGitHubProfilePicture.js"></script> -->
   <script src="js/activeNavLinks.js"></script>
   <script src="js/tailwind.config.js"></script>
   <script src="js/themeSwitcher.js"></script>
